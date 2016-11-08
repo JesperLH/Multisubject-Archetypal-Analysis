@@ -1,0 +1,52 @@
+Multisubject Archetypal Analysis Toolbox - Software License Agreement
+
+Multisubject Archetypal Analysis Toolbox Copyright Notice (2016) 
+Technical University of Denmark (hereinafter reffered to as "DTU"). 
+All rights reserved. Contact information jesper dot hinrich at gmail dot com .
+
+Article 1 - Definitions
+
+1. The "Software" constitutes any software distributed as part of or pertaining
+to the Multisubject Archetypal Analysis Toolbox as made available online at 
+https://brainconnectivity.compute.dtu.dk/ or 
+https://GITHUB.../ .
+
+2. "Academic" and "non-profit" use shall mean a user of Software: who is employed
+by, or a student enrolled at, or a scientist legitimately affiliated with an
+academic, non-profit or government institution; and whose use of the
+Software is on behalf of and in the interest of such academic, non-profit
+or government institution and is not on behalf of a commercial entity.
+
+Article 2 - License
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for academic and non-profit use provided 
+that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+3. As long as you qualify as an Academic User, DTU hereby grants free access
+to the Software supplied by DTU for non-commercial use only. 
+You acknowledge and agree that you may not use the Software for
+commercial purpose without first obtaining a commercial license from DTU.
+
+4. Neither the names of the contributors nor of their affiliated
+institutions may be used to endorse or promote products derived from this
+software without specific prior written permission.
+
+5. WARRANTY DISCLAIMER.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS 
+AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, 
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+EXEMPLARY, OR CONSE<QUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT 
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
