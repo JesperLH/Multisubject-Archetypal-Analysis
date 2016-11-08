@@ -15,10 +15,12 @@ Section for Cognitive Systems.
 The toolbox was developed in connection with the Brain Connectivity project 
 at DTU (https://brainconnectivity.compute.dtu.dk/) .
 
-Algorithms:
+## Algorithms:
 
-MultiSubjectAA:     MSAA with heteroscedastic noise in the first dimension.
-MultiSubjectAA_T:   MSAA with heteroscedastic noise in the second dimension.
+* MultiSubjectAA
+	- MSAA with heteroscedastic noise in the first dimension.
+* MultiSubjectAA_T   
+	- MSAA with heteroscedastic noise in the second dimension.
 
 Common algorithm properties
 
@@ -29,5 +31,7 @@ Common algorithm properties
 
 
 Demonstrators:
-demoMSAA,demoMSAA_T:    Demostrates the algorithms and their optional parameters.
-demoVisualizeAA:        Demostrates how to visualize the found archetypes (REQUIRES VISUALIZATION TOOLBOX).
+* demoMSAA,demoMSAA_T
+	- Demostrates the algorithms and their optional parameters.
+* demoVisualizeAA
+	- Demostrates how to visualize the found archetypes (REQUIRES VISUALIZATION TOOLBOX).
