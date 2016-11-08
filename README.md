@@ -29,9 +29,15 @@ Common algorithm properties
 * Ability to individually turn off heteroscedastic noise modeling.
 * The log likelihood is calculated.
 
-
-Demonstrators:
+## Demonstrators:
 * demoMSAA,demoMSAA_T
 	- Demostrates the algorithms and their optional parameters.
 * demoVisualizeAA
 	- Demostrates how to visualize the found archetypes (REQUIRES VISUALIZATION TOOLBOX).
+
+## References
+Archetypal analysis was first proposed by Cutler and Brieman [1]. The extension to heteroscedastic noise and ability to model multiple subjects was introduced in by Hinrich et al. [2]. The solution of AA using projected gradient descent and the FurthestSum initialization was proposed by Mørup and Hansen[3]. While these reference provides the basis for the implementation of MSAA there are many other interesting approaches in AA and its application.
+
+ * [1] Cutler, A., & Breiman, L. (1994). Archetypal analysis. Technometrics, 36(4), 338-347.
+ * [2] Hinrich, J. L., Bardenfleth, S. E., Røge, R. E., Churchill, N. W., Madsen, K. H., & Mørup, M. (2016). Archetypal Analysis for Modeling Multisubject fMRI Data. IEEE Journal of Selected Topics in Signal Processing, 10(7), 1160-1171.
+ * [3] Mørup, M., & Hansen, L. K. (2012). Archetypal analysis for machine learning and data mining. Neurocomputing, 80, 54-63.
