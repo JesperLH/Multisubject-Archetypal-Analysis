@@ -33,7 +33,7 @@ Common algorithm properties
 * demoMSAA,demoMSAA_T
 	- Demostrates the algorithms and their optional parameters.
 * demoVisualizeAA
-	- Demostrates how to visualize the found archetypes (REQUIRES VISUALIZATION TOOLBOX).
+	- Demostrates how to visualize the found archetypes (Visualizations requires the VITLAB toolbox, avaliable at https://github.com/JesperLH/VITLAM).
 
 ## References
 Archetypal analysis was first proposed by Cutler and Brieman [1]. The extension to heteroscedastic noise and ability to model multiple subjects was introduced in by Hinrich et al. [2]. The solution of AA using projected gradient descent and the FurthestSum initialization was proposed by Mørup and Hansen[3]. While these reference provides the basis for the implementation of MSAA there are many other interesting approaches in AA and its application.
