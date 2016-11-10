@@ -1,5 +1,5 @@
 %% Visualization demo; Multi-Subject Archetypal Analysis
-% REQUIRES VIZUALIZATION TOOLBOX!
+% Requires the VITLAB toolbox, avaliable at https://github.com/JesperLH/VITLAM
 clear
 load('./demos/example_data_fmri')
 
