@@ -22,7 +22,7 @@ opts.maxiter = 100;
 opts.conv_crit = 1e-8;
 opts.fix_var_iter = 5; 
 opts.use_gpu = false; 
-opts.heteroscedstic = true;
+opts.heteroscedastic = true;
 opts.rngSEED = 12345; %Ability to fix the seed for the random generator
 
 %% Finding a solution
