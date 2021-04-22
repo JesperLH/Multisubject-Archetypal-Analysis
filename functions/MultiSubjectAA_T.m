@@ -161,7 +161,7 @@ for i = 1:B
     if voxelVariance
         subj(i).sigmaSq = ones(subj(i).V,1,'like',muC)*SST/(sum([subj.V])*T);
     else
-        subj(i).sigmaSq = ones(V,1,'like',muC);
+        subj(i).sigmaSq = ones(subj(i).V,1,'like',muC);
     end
     
     %Initialise S
@@ -294,7 +294,7 @@ while (abs(dNLL)>=conv_crit*abs(NLL) || fix_var_iter >= iter) && iter<maxiter
     if rem(iter,5)==0
         t1=cputime;
         fprintf('%12.0f | %12.4e | %12.4e | %12.4e | %16.4e | %19.4e |%12.4f\n'...
-            ,iter,NLL,dNLL/abs(NLL),muC,min(median([subj(:).muS])),min(min([subj.sigmaSq])),t1-told);
+            ,iter,NLL,dNLL/abs(NLL),muC,min(median([subj(:).muS])),min(cellfun(@min,{subj.sigmaSq})),t1-told);
     end
     
     %Check for convergence issues
@@ -316,7 +316,7 @@ varexpl=(SST-sum(SSE))/SST;
 disp(dline);
 disp(dheader);
 disp(dline);
-fprintf('%12.0f | %12.4e | %12.4e | %12.4e | %16.4e | %19.4e |%12.4f\n',iter,NLL,dNLL/abs(NLL),muC,min(median([subj(:).muS])),min(min([subj.sigmaSq])),t1-told);
+fprintf('%12.0f | %12.4e | %12.4e | %12.4e | %16.4e | %19.4e |%12.4f\n',iter,NLL,dNLL/abs(NLL),muC,min(median([subj(:).muS])),min(cellfun(@min,{subj.sigmaSq})),t1-told);
 fprintf('Algorithm converged in %f sec. . Reconstruction covers %3.2f%% of data variance.\n',time_taken,varexpl*100)
 
 %% Sort components by selected criteria
