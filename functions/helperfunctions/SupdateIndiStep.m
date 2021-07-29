@@ -35,6 +35,8 @@
 % or visit : https://brainconnectivity.compute.dtu.dk/ (under software)
 function [S,muS,SSt]=SupdateIndiStep(S,XCtX,CtXtXC,muS,numObs,niter,sigmaSq)
 
+if isscalar(muS), muS=ones(1,numObs); else, muS=muS(:)'; end
+
 [~,numFeature]=size(S);
 cost = -2*(sum(S.*XCtX))+sum(S.*(CtXtXC*S));
 for k=1:niter
