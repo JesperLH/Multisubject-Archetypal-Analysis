@@ -39,7 +39,9 @@ if isscalar(muS), muS=ones(1,numObs); else, muS=muS(:)'; end
 
 [~,numFeature]=size(S);
 cost = -2*(sum(S.*XCtX))+sum(S.*(CtXtXC*S));
-for k=1:niter
+k=1;
+rel_delta_cost = inf;
+while k <= niter && rel_delta_cost > 1e-12
     g=(CtXtXC*S-XCtX)/(numObs*numFeature); %(U_s2) gradient
     g=bsxfun(@minus,g,sum(bsxfun(@times,g,S)));
     Sold=S;
@@ -49,11 +51,15 @@ for k=1:niter
     
     cost_new = -2*(sum(S.*XCtX))+sum(S.*(CtXtXC*S));
     idx = cost_new <= cost;
+    rel_delta_cost = sum((cost_new-cost).^2)/sum(cost.^2);
     S(:,~idx) = Sold(:,~idx);
     muS(idx) = 1.2*muS(idx);
     muS(~idx) = 0.5*muS(~idx);
     cost(idx) = cost_new(idx);
+    k = k+1;
+    %fprintf('%e\n',rel_delta_cost)
 end
+% fprintf('%i of %i possible iterations\n',k, niter)
 
 %Calculate sufficient statistic. With or without sigmaSq.
 if nargin == 7
